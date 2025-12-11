@@ -205,15 +205,15 @@
     <div id="lightbox"><img src="" alt=""></div>
 
     <script>
-        const totalArtworks = 30; // adjust as you add more
+        const totalArtworks = 30; 
         const gallery = document.getElementById('gallery');
         const lightbox = document.getElementById('lightbox');
         const lbImg = lightbox.querySelector('img');
 
         for (let i = 1; i <= totalArtworks; i++) {
             const num = String(i).padStart(2, '0');
-            const thumb = `images/thumb/art${num}.avif`; // AVIF thumbnails
-            const full = `images/full/art${num}.webp`;  // WebP full-size
+            const thumb = `images/thumb/art${num}.avif`;
+            const full = `images/full/art${num}.webp`;  
 
             const item = document.createElement('div');
             item.className = 'masonry-item';
