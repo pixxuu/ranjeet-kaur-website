@@ -73,6 +73,12 @@
             padding: 40px 0 100px;
         }
 
+        @supports (-webkit-touch-callout: none) {
+            .masonry {
+                column-fill: auto;
+            }
+        }
+
         .masonry-item {
             break-inside: avoid-column;
             margin-bottom: 24px;
