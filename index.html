@@ -80,8 +80,8 @@
             border-radius: 9px;
             overflow: hidden;
             cursor: zoom-in;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-            background: #f7f7f7;
+            box-shadow: none;
+            background: transparent;
         }
 
         .masonry-item img {
@@ -205,7 +205,7 @@
     <div id="lightbox"><img src="" alt=""></div>
 
     <script>
-        const totalArtworks = 30; 
+        const totalArtworks = 30;
         const gallery = document.getElementById('gallery');
         const lightbox = document.getElementById('lightbox');
         const lbImg = lightbox.querySelector('img');
@@ -213,7 +213,7 @@
         for (let i = 1; i <= totalArtworks; i++) {
             const num = String(i).padStart(2, '0');
             const thumb = `images/thumb/art${num}.avif`;
-            const full = `images/full/art${num}.webp`;  
+            const full = `images/full/art${num}.webp`;
 
             const item = document.createElement('div');
             item.className = 'masonry-item';
