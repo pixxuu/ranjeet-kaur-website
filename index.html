@@ -73,14 +73,11 @@
             padding: 40px 0 100px;
         }
 
-        @supports (-webkit-touch-callout: none) {
-            .masonry {
-                column-fill: auto;
-            }
-        }
-
         .masonry-item {
-            break-inside: avoid-column;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+
             margin-bottom: 24px;
             border-radius: 9px;
             overflow: hidden;
@@ -95,6 +92,7 @@
             display: block;
             opacity: 0;
             transition: opacity .6s ease;
+
         }
 
         .masonry-item img.loaded {
@@ -217,7 +215,7 @@
         const artworks = [
             'art01', 'art02', 'art03', 'art04', 'art05', 'art06',
             'art07', 'art08', 'art09', 'art10', 'art11', 'art12',
-            'art13', 'art14', 'art15', 'art16', 'art17', 'art19',
+            'art15', 'art16', 'art17', 'art14', 'art13', 'art19',
             'art18', 'art20', 'art21', 'art22', 'art23', 'art24',
             'art25', 'art26', 'art27', 'art28', 'art29', 'art30'
         ];
